@@ -20,7 +20,7 @@ namespace DesignPatterns
     }
 
     /// <summary>
-    ///   Order Number Validation
+    ///   Order Products Validation
     /// </summary>
     public class OrderProductsSpecification : ISpecification<Models.Order>
     {
