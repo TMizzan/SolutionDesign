@@ -6,19 +6,19 @@ namespace Models
     {
         #region "Properties"
 
-        public string OrderNumber;
+        public string OrderNumber { get; set; }
 
-        public string ProductId;
+        public string ProductId { get; set; }
 
-        public string ShortDescription;
+        public string ShortDescription { get; set; }
 
-        public string LongDescription;
+        public string LongDescription { get; set; }
 
-        public decimal UnitPrice;
+        public decimal UnitPrice { get; set; }
 
-        public string UPCCode;
+        public string UPCCode { get; set; }
 
-        public int QuantityOnHand;
+        public int QuantityOnHand { get; set; }
 
         #endregion
 

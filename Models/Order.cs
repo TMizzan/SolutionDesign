@@ -8,12 +8,17 @@ namespace Models
     {
         #region "Properties"
 
-        public string CustomerId;
-        public System.Collections.Generic.List<Product> Products;
-        public decimal Total;
-        public decimal Discount;
-        public DateTime OrderDate;
-        public string OrderNumber;
+        public string CustomerId { get; set; }
+
+        public System.Collections.Generic.List<Product> Products { get; set; }
+
+        public decimal Total { get; set; }
+
+        public decimal Discount { get; set; }
+
+        public DateTime OrderDate { get; set; }
+
+        public string OrderNumber { get; set; }
 
         #endregion
 

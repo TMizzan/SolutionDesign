@@ -13,3 +13,10 @@ DesignPatterns.AndSpecification.cs
 DesignPatterns.OrSpecification.cs
 
 SolutionDesign.Program.cs
+
+
+Singleton Pattern
+--------------------------------------------------------------------------
+DesignPatterns.Singleton.cs
+
+SolutionDesign.Program.cs
