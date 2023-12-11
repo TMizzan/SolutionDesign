@@ -16,7 +16,7 @@ namespace DesignPatterns
         {
             if (Instance == null)
             {
-                lock(ThreadLock)
+                lock (ThreadLock)
                 {
                     if (Instance == null)
                     {

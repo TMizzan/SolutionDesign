@@ -7,6 +7,8 @@ namespace DesignPatterns
     /// </summary>
     public interface ISubscriber
     {
+        string EmailAddress { get; set; }
+        string MobileNumber { get; set; }
         void Update(string message);
     }
 }

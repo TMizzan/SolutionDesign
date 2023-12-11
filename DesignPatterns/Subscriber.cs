@@ -24,13 +24,13 @@ namespace DesignPatterns
 
         public void Update(string message)
         {
-            if (String.IsNullOrEmpty(EmailAddress))
+            if (!String.IsNullOrEmpty(EmailAddress))
             {
                 // TODO: Send Message To Subscriber Using Email API
                 Console.WriteLine($"{EmailAddress} Has Been Notified By Email.");
             }
 
-            if (String.IsNullOrEmpty(MobileNumber))
+            if (!String.IsNullOrEmpty(MobileNumber))
             {
                 // TODO: Send Message To Subscriber Using Text API
                 Console.WriteLine($"{MobileNumber} Has Been Notified By Text.");

@@ -12,10 +12,23 @@ namespace SolutionDesign
         {
             try
             {
-                // Specification Pattern Test
+                #region "Specification Pattern Test"
+
                 Console.WriteLine($"{System.DateTime.Now.ToShortDateString() } " +
                                   $"{System.DateTime.Now.ToShortTimeString() } " +
                                   $"Order Result Validation: {ValidateOrder()}");
+
+                #endregion
+
+                #region "Subscriber Pattern Test"
+
+                System.Collections.Generic.List<ISubscriber> subscribers =
+                    new System.Collections.Generic.List<ISubscriber> { new Subscriber("email@addy.com", "123-456-7890") };
+
+                Notify notify = new Notify(subscribers);
+                notify.SendNotication("Test Message");
+
+                #endregion
             }
             catch (Exception ex)
             {
