@@ -1,5 +1,5 @@
 ﻿
-Solution Design Examples
+Solution Design Examples (Coded Using Visual Studio For Mac)
 ==========================================================================
 
 Specification Pattern (Expanded For Multiples)
@@ -20,3 +20,17 @@ Singleton Pattern
 DesignPatterns.Singleton.cs
 
 SolutionDesign.Program.cs
+
+
+Observer Pattern
+--------------------------------------------------------------------------
+DesignPatterns.ISubscriber.cs - Observer
+
+DesignPatterns.Subscriber.cs - Concrete Observer
+
+DesignPatterns.INotify.cs - Subject
+
+DesignPatterns.Notify - Concrete Subject
+
+
+

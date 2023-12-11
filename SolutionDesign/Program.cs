@@ -12,10 +12,9 @@ namespace SolutionDesign
         {
             try
             {
-                Console.WriteLine(System.DateTime.Now.ToShortDateString() + " " +
-                                  System.DateTime.Now.ToShortTimeString() + " " +
-                                  "Order Result Validation: " +
-                                  ValidateOrder(BuildOrder()));
+                Console.WriteLine($"{System.DateTime.Now.ToShortDateString() }" +
+                                  $"{System.DateTime.Now.ToShortTimeString() }" +
+                                  $"Order Result Validation: {ValidateOrder(BuildOrder())}");
             }
             catch (Exception ex)
             {

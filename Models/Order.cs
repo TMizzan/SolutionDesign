@@ -10,15 +10,15 @@ namespace Models
 
         public string CustomerId { get; set; }
 
+        public DateTime OrderDate { get; set; }
+
+        public string OrderNumber { get; set; }
+
         public System.Collections.Generic.List<Product> Products { get; set; }
 
         public decimal Total { get; set; }
 
         public decimal Discount { get; set; }
-
-        public DateTime OrderDate { get; set; }
-
-        public string OrderNumber { get; set; }
 
         #endregion
 
