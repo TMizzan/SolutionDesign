@@ -19,10 +19,10 @@ namespace SolutionDesign
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exception :  " + ex.ToString());
+                Console.WriteLine($"Exception :  {ex.ToString()}");
             }
 
-            // Allow User To View Results And End
+            // Allow User To View Results And End Console Program
             Console.ReadLine();
         }
 
