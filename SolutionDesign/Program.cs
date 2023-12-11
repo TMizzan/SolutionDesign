@@ -12,9 +12,10 @@ namespace SolutionDesign
         {
             try
             {
-                Console.WriteLine($"{System.DateTime.Now.ToShortDateString() }" +
-                                  $"{System.DateTime.Now.ToShortTimeString() }" +
-                                  $"Order Result Validation: {ValidateOrder(BuildOrder())}");
+                // Specification Pattern Test
+                Console.WriteLine($"{System.DateTime.Now.ToShortDateString() } " +
+                                  $"{System.DateTime.Now.ToShortTimeString() } " +
+                                  $"Order Result Validation: {ValidateOrder()}");
             }
             catch (Exception ex)
             {
@@ -40,7 +41,7 @@ namespace SolutionDesign
             };
         }
 
-        private static bool ValidateOrder(Models.Order order)
+        private static bool ValidateOrder()
         {
             DesignPatterns.OrderNumberSpecification orderNumberSpecification     = new DesignPatterns.OrderNumberSpecification();
             DesignPatterns.OrderProductsSpecification orderProductsSpecification = new DesignPatterns.OrderProductsSpecification();
@@ -49,6 +50,8 @@ namespace SolutionDesign
             System.Collections.Generic.List<DesignPatterns.ISpecification<Order>> andSpecifications =
                 new System.Collections.Generic.List<DesignPatterns.ISpecification<Order>>
                 {orderNumberSpecification, orderProductsSpecification, orderTotalSpecification};
+
+            Models.Order order = BuildOrder();
 
             bool valid = new DesignPatterns.AndSpecification<Order>(andSpecifications).IsValid(order);
 
