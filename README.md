@@ -1,5 +1,5 @@
 ﻿
-Solution Design Examples (Coded Using Visual Studio For Mac)
+Solution Design Examples (Visual Studio For Mac)
 ==========================================================================
 
 Specification Pattern (Expanded For Multiples)
@@ -15,7 +15,7 @@ DesignPatterns.OrSpecification.cs
 SolutionDesign.Program.cs
 
 
-Singleton Pattern
+Singleton Pattern (Thread Safe)
 --------------------------------------------------------------------------
 DesignPatterns.Singleton.cs
 
